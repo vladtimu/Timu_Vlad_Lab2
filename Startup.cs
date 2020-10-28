@@ -55,7 +55,8 @@ namespace Timu_Vlad_Lab2
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+            }
+            );
         }
     }
 }
