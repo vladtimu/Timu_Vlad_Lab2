@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Timu_Vlad_Lab2.Models;
+using LibraryModel.Data;
+using LibraryModel.Models;
+namespace LibraryModel.Data
 
-namespace Timu_Vlad_Lab2.Data
 { 
 public class DbInitializer
 {

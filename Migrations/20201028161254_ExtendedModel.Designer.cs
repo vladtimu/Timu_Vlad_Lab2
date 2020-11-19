@@ -5,7 +5,8 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Timu_Vlad_Lab2.Data;
+using LibraryModel.Data;
+
 
 namespace Timu_Vlad_Lab2.Migrations
 {

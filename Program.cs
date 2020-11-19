@@ -7,7 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
-using Timu_Vlad_Lab2.Data;
+using LibraryModel.Data;
+
 
 namespace Timu_Vlad_Lab2
 {

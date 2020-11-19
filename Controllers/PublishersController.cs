@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Timu_Vlad_Lab2.Data;
-using Timu_Vlad_Lab2.Models;
+using LibraryModel.Data;
+using LibraryModel.Models;
 using Timu_Vlad_Lab2.Models.LibraryViewModels;
+/*using Timu_Vlad_Lab2.Models.LibraryViewModels;*/
 
 namespace Timu_Vlad_Lab2.Controllers
 {
@@ -21,7 +22,7 @@ namespace Timu_Vlad_Lab2.Controllers
         }
 
         // GET: Publishers
-        public async Task<IActionResult> Index(int? id, int? bookID)
+       /* public async Task<IActionResult> Index(int? id, int? bookID)
         {
             var viewModel = new PublisherIndexData();
             viewModel.Publisherss = await _context.Publishers
@@ -46,7 +47,7 @@ namespace Timu_Vlad_Lab2.Controllers
                 x => x.ID == bookID).Single().Orders;
             }
             return View(viewModel);
-        }
+        }*/
 
         // GET: Publishers/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Timu_Vlad_Lab2.Models;
 using Microsoft.EntityFrameworkCore;
-using Timu_Vlad_Lab2.Data;
+using LibraryModel.Data;
+using LibraryModel.Models;
 using Timu_Vlad_Lab2.Models.LibraryViewModels;
 
 namespace Timu_Vlad_Lab2.Controllers
