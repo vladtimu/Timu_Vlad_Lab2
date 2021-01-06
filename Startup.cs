@@ -10,6 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using LibraryModel.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using LibraryModel.Data;
 
 namespace Timu_Vlad_Lab2
 {
@@ -19,7 +22,6 @@ namespace Timu_Vlad_Lab2
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -28,6 +30,10 @@ namespace Timu_Vlad_Lab2
             services.AddControllersWithViews();
             services.AddDbContext<LibraryContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<LibraryContext>(options =>
+
+options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

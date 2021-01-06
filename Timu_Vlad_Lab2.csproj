@@ -5,6 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Protos\customersCRUD.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.34.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.34.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
@@ -19,4 +29,10 @@
     <ProjectReference Include="LibraryModel\LibraryModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Protobuf Include="Protos\customersCRUD.proto" GrpcServices="Server" />
+  </ItemGroup>
+	<ItemGroup>
+		<Protobuf Include="Protos\customersCRUD.proto" GrpcServices="Client" />
+	</ItemGroup>
 </Project>
